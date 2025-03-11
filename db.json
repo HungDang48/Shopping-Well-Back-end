@@ -205,6 +205,96 @@
       "createdAt": 1733146900372,
       "updatedAt": 1733146900372,
       "id": 27
+    },
+    {
+      "OrderID": 57319,
+      "orderStatus": "Pending",
+      "orderDate": "2024-12-06T19:01:40.747Z",
+      "paymentStatus": "Unpaid",
+      "paymentMethod": "cod",
+      "UserID": 12,
+      "products": [
+        {
+          "productId": 5,
+          "name": "quần jogger",
+          "quantity": 26,
+          "price": 250000,
+          "size": "L",
+          "color": "black"
+        }
+      ],
+      "shippingInfors": {
+        "GuestName": "333333333",
+        "GuestNumber": "333333333333333",
+        "Address": "33333333333333333"
+      },
+      "shippingFee": 20000,
+      "courier": "Giao Hàng Tiêu Chuẩn",
+      "totalAmount": 5220000,
+      "discount": 1300000,
+      "createdAt": 1733511700777,
+      "updatedAt": 1733511700777,
+      "id": 28
+    },
+    {
+      "OrderID": 88674,
+      "orderStatus": "Pending",
+      "orderDate": "2024-12-07T12:57:22.654Z",
+      "paymentStatus": "Unpaid",
+      "paymentMethod": "cod",
+      "UserID": 9,
+      "products": [
+        {
+          "productId": 6,
+          "name": "quần cargo 1",
+          "quantity": 1,
+          "price": 350000,
+          "size": "XXL",
+          "color": "black"
+        }
+      ],
+      "shippingInfors": {
+        "GuestName": "111111111111111",
+        "GuestNumber": "1111111111",
+        "Address": "11111111111"
+      },
+      "shippingFee": 20000,
+      "courier": "Giao Hàng Tiêu Chuẩn",
+      "totalAmount": 370000,
+      "discount": 0,
+      "createdAt": 1733576242677,
+      "updatedAt": 1733576242677,
+      "id": 29
+    },
+    {
+      "OrderID": 60178,
+      "orderStatus": "Pending",
+      "orderDate": "2025-03-11T08:03:33.235Z",
+      "paymentStatus": "Unpaid",
+      "paymentMethod": "cod",
+      "UserID": 7,
+      "products": [
+        {
+          "productId": 2,
+          "name": "Quần kaki ống rộng",
+          "quantity": 12,
+          "price": 350000,
+          "size": "S",
+          "color": "N/A"
+        }
+      ],
+      "shippingInfors": {
+        "GuestName": "ádasd",
+        "GuestNumber": "ádasđs",
+        "Address": "ádasd"
+      },
+      "shippingFee": 20000,
+      "courier": "Giao Hàng Tiêu Chuẩn",
+      "totalAmount": 4220000,
+      "discount": 0,
+      "createdAt": 1741680213281,
+      "updatedAt": 1741680213281,
+      "id": 30
     }
   ],
   "Admins": [
@@ -253,7 +343,7 @@
       "UserID": 7,
       "name": "HND",
       "username": "VHUNG48",
-      "email": "gologolo45678@gmail.com",
+      "email": "gologolo4567@gmail.com",
       "birthday": "2024-11-28",
       "gender": "male",
       "password": "123123",
@@ -286,6 +376,18 @@
       "createdAt": 1733142466071,
       "updatedAt": 1733142466071,
       "birthDate": "2024-12-12"
+    },
+    {
+      "id": 14,
+      "UserID": 13,
+      "name": "Nguyễn Văn A",
+      "username": "HungDang",
+      "email": "gologolo7@gmail.com",
+      "birthday": "2025-03-07",
+      "gender": "female",
+      "password": "123123",
+      "createdAt": 1741504148809,
+      "updatedAt": 1741504148809
     }
   ],
   "categories": [
@@ -384,14 +486,6 @@
       "gendersID": 3,
       "createdAt": 1616346753759,
       "updatedAt": 1616346753759
-    },
-    {
-      "id": 13,
-      "name": "QUẦN ĐÙI",
-      "categoriesID": 13,
-      "gendersID": 3,
-      "createdAt": 1733142708798,
-      "updatedAt": 1733142708798
     }
   ],
   "products": [
@@ -402,22 +496,30 @@
       "gendersID": 3,
       "newSaleID": true,
       "hotSaleID": true,
-      "size": "L,XL,XXL,XXXL",
-      "color": "black,kaki",
-      "price": "350000",
+      "stock": {
+        "S": 15,
+        "M": 10,
+        "L": 5,
+        "XL": 3,
+        "XXL": 0
+      },
+      "price": 350000,
       "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-ltb0sps5bqo488.webp",
       "createdAt": 1616346753759,
       "updatedAt": 1616346753759
     },
     {
       "id": 3,
-      "name": "áo sơ mi nam",
+      "name": "Áo sơ mi nam",
       "categoriesID": 1,
       "gendersID": 1,
       "newSaleID": false,
       "hotSaleID": true,
-      "size": "L,XL,XXL",
-      "color": "black",
+      "stock": {
+        "L": 5,
+        "XL": 3,
+        "XXL": 2
+      },
       "price": 120000,
       "image": "https://lados.vn/wp-content/uploads/2024/07/z2411209596037-cff07cb9281741d50cd51f4f63b49688-1.jpeg",
       "createdAt": 1616346753759,
@@ -425,13 +527,19 @@
     },
     {
       "id": 4,
-      "name": "áo sơ mi nũ",
+      "name": "Áo sơ mi nữ",
       "categoriesID": 2,
       "gendersID": 2,
       "newSaleID": false,
       "hotSaleID": true,
-      "size": "M,L,XL,XXL,XXXL,XXXXL",
-      "color": "black",
+      "stock": {
+        "M": 10,
+        "L": 8,
+        "XL": 6,
+        "XXL": 4,
+        "XXXL": 2,
+        "XXXXL": 1
+      },
       "price": 300000,
       "image": "https://product.hstatic.net/1000392339/product/010222205won_at049_h-01_13c8f30d915f43c4a3e19547e573e3ea_master.jpg",
       "createdAt": 1616346753759,
@@ -439,13 +547,16 @@
     },
     {
       "id": 5,
-      "name": "quần jogger",
-      "categoriesID": 13,
+      "name": "Quần jogger",
+      "categoriesID": 10,
       "gendersID": 3,
       "newSaleID": false,
       "hotSaleID": true,
-      "size": "L,XL,XXL",
-      "color": "black",
+      "stock": {
+        "L": 7,
+        "XL": 5,
+        "XXL": 3
+      },
       "price": 250000,
       "image": "https://img.lazcdn.com/g/p/bc618bf1e54171b9566353f6532208eb.jpg_720x720q80.jpg",
       "createdAt": 1616346753759,
@@ -453,13 +564,16 @@
     },
     {
       "id": 6,
-      "name": "quần cargo 1",
+      "name": "Quần cargo 1",
       "categoriesID": 10,
       "gendersID": 3,
       "newSaleID": false,
       "hotSaleID": true,
-      "size": "L,XL,XXL",
-      "color": "white,black,green",
+      "stock": {
+        "L": 6,
+        "XL": 4,
+        "XXL": 2
+      },
       "price": 350000,
       "image": "https://im.uniqlo.com/global-cms/spa/res6be24b8a68d8a56da89b011e7d8fca9dfr.jpg",
       "createdAt": 1616346753759,
@@ -467,13 +581,16 @@
     },
     {
       "id": 7,
-      "name": "quần cargo 2",
+      "name": "Quần cargo 2",
       "categoriesID": 10,
       "gendersID": 3,
       "newSaleID": false,
       "hotSaleID": true,
-      "size": "L,XL,XXL",
-      "color": "white,black,green",
+      "stock": {
+        "L": 6,
+        "XL": 4,
+        "XXL": 2
+      },
       "price": 350000,
       "image": "https://im.uniqlo.com/global-cms/spa/res9d8dca2c43e731b6a979bdd506bbcb93fr.jpg",
       "createdAt": 1616346753759,
@@ -486,8 +603,12 @@
       "gendersID": 3,
       "newSaleID": false,
       "hotSaleID": true,
-      "size": "M,L,XL,XXL",
-      "color": "blue,black",
+      "stock": {
+        "M": 8,
+        "L": 6,
+        "XL": 4,
+        "XXL": 2
+      },
       "price": 450000,
       "image": "https://bizweb.dktcdn.net/thumb/grande/100/415/697/products/ak046.png?v=1701405178907",
       "createdAt": 1616346753759,
@@ -495,93 +616,113 @@
     },
     {
       "id": 9,
-      "productId": "9",
       "name": "Quần cargo túi hộp",
-      "createdAt": 1616346753759,
-      "updatedAt": 1616346753759,
       "categoriesID": 10,
       "gendersID": 3,
       "newSaleID": true,
       "hotSaleID": true,
-      "size": "L,XL,XXL",
-      "color": "olive,black",
+      "stock": {
+        "L": 6,
+        "XL": 4,
+        "XXL": 3
+      },
       "price": 380000,
-      "image": "https://s3.ap-southeast-1.amazonaws.com/thegmen.vn/2023/11/16994321763372nifjj.jpg"
+      "image": "https://s3.ap-southeast-1.amazonaws.com/thegmen.vn/2023/11/16994321763372nifjj.jpg",
+      "createdAt": 1616346753759,
+      "updatedAt": 1616346753759
     },
     {
       "id": 10,
-      "productId": "10",
-      "name": "Áo thun lana du dây",
-      "createdAt": 1616346753759,
-      "updatedAt": 1616346753759,
+      "name": "Áo thun lana dây rút",
       "categoriesID": 9,
       "gendersID": 3,
       "newSaleID": true,
       "hotSaleID": true,
-      "size": "M,L,XL,XXL",
-      "color": "white,black",
-      "price": "150000",
+      "stock": {
+        "M": 10,
+        "L": 8,
+        "XL": 6,
+        "XXL": 4
+      },
+      "price": 150000,
       "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-luf3g7hqpqmp59"
     },
     {
       "id": 11,
-      "productId": "11",
       "name": "Áo khoác bomber cổ điển",
-      "createdAt": 1616346753759,
-      "updatedAt": 1616346753759,
       "categoriesID": 12,
       "gendersID": 3,
       "newSaleID": true,
       "hotSaleID": true,
-      "size": "M,L,XL",
-      "color": "black,green",
+      "stock": {
+        "M": 0,
+        "L": 0,
+        "XL": 0
+      },
       "price": 450000,
-      "image": "https://image.made-in-china.com/2f0j00ckTbQBRMaHqW/Customize-Varsity-Jacket-Vintage-Puffer-Jacket-Sports-Bomber-Jacket-Men.webp"
+      "image": "https://image.made-in-china.com/2f0j00ckTbQBRMaHqW/Customize-Varsity-Jacket-Vintage-Puffer-Jacket-Sports-Bomber-Jacket-Men.webp",
+      "createdAt": 1616346753759,
+      "updatedAt": 1616346753759
     },
     {
       "id": 12,
-      "productId": "12",
-      "name": "áo bomber Pandax",
-      "createdAt": 1616346753759,
-      "updatedAt": 1616346753759,
+      "name": "Áo bomber Pandax",
       "categoriesID": 12,
       "gendersID": 3,
       "newSaleID": true,
       "hotSaleID": true,
-      "size": "L,XL,XXL",
-      "color": "grey,blue",
+      "stock": {
+        "M": 10,
+        "L": 8,
+        "XL": 6,
+        "XXL": 4,
+        "XXXL": 2,
+        "XXXXL": 1
+      },
       "price": 600000,
-      "image": "https://product.hstatic.net/200000370449/product/bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb_e10c0e652f684f258523de5c7f64443d_master.jpg"
+      "image": "https://product.hstatic.net/200000370449/product/bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb_e10c0e652f684f258523de5c7f64443d_master.jpg",
+      "createdAt": 1616346753759,
+      "updatedAt": 1616346753759
     },
     {
       "id": 13,
-      "productId": "13",
       "name": "Quần jean ống rộng",
-      "createdAt": 1616346753759,
-      "updatedAt": 1616346753759,
       "categoriesID": 11,
       "gendersID": 3,
       "newSaleID": true,
       "hotSaleID": true,
-      "size": "L,XL,XXL",
-      "color": "blue,black",
+      "stock": {
+        "M": 10,
+        "L": 8,
+        "XL": 6,
+        "XXL": 4,
+        "XXXL": 2,
+        "XXXXL": 1
+      },
       "price": 500000,
-      "image": "https://product.hstatic.net/1000285106/product/38480f0d725fb801e14e6_030034e2b697450cab7c1c4c935ad6f1.jpg"
+      "image": "https://product.hstatic.net/1000285106/product/38480f0d725fb801e14e6_030034e2b697450cab7c1c4c935ad6f1.jpg",
+      "createdAt": 1616346753759,
+      "updatedAt": 1616346753759
     },
     {
       "id": 14,
-      "productId": "14",
       "name": "Áo khoác hoodie khóa kéo",
-      "createdAt": 1616346753759,
-      "updatedAt": 1616346753759,
       "categoriesID": 12,
       "gendersID": 3,
       "newSaleID": true,
       "hotSaleID": true,
-      "size": "M,L,XL",
-      "color": "black,white,grey",
+      "stock": {
+        "M": 10,
+        "L": 8,
+        "XL": 6,
+        "XXL": 4,
+        "XXXL": 2,
+        "XXXXL": 1
+      },
       "price": 350000,
-      "image": "https://product.hstatic.net/1000308345/product/img_4095_109a93ea973343da80e8e0b2070310ce_master.jpg"
+      "image": "https://product.hstatic.net/1000308345/product/img_4095_109a93ea973343da80e8e0b2070310ce_master.jpg",
+      "createdAt": 1616346753759,
+      "updatedAt": 1616346753759
     },
     {
       "id": 15,
@@ -590,8 +731,14 @@
       "gendersID": 3,
       "newSaleID": true,
       "hotSaleID": false,
-      "size": "L,XL,XXL",
-      "color": "black,navy",
+      "stock": {
+        "M": 10,
+        "L": 8,
+        "XL": 6,
+        "XXL": 4,
+        "XXXL": 2,
+        "XXXXL": 1
+      },
       "price": 200000,
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWMF5AEVr5tCoNe1kt1pLTJHbpdy9Gvjmt8Q&s",
       "createdAt": 1616346753759,
@@ -599,18 +746,23 @@
     },
     {
       "id": 16,
-      "productId": "16",
-      "name": "áo sơ mi nữ 2",
-      "createdAt": 1616346753759,
-      "updatedAt": 1616346753759,
+      "name": "Áo sơ mi nữ 2",
       "categoriesID": 2,
       "gendersID": 2,
       "newSaleID": true,
       "hotSaleID": true,
-      "size": "L,XL,XXL",
-      "color": "brown,beige",
+      "stock": {
+        "M": 10,
+        "L": 8,
+        "XL": 6,
+        "XXL": 4,
+        "XXXL": 2,
+        "XXXXL": 1
+      },
       "price": 750000,
-      "image": "https://product.hstatic.net/1000392339/product/010222205on_am072_i-01_f641190f74dc469bb92afbbd57212b4d_master.jpg"
+      "image": "https://product.hstatic.net/1000392339/product/010222205on_am072_i-01_f641190f74dc469bb92afbbd57212b4d_master.jpg",
+      "createdAt": 1616346753759,
+      "updatedAt": 1616346753759
     },
     {
       "id": 17,
@@ -619,8 +771,14 @@
       "gendersID": 3,
       "newSaleID": true,
       "hotSaleID": false,
-      "size": "M,L,XL",
-      "color": "khaki,green",
+      "stock": {
+        "M": 10,
+        "L": 8,
+        "XL": 6,
+        "XXL": 4,
+        "XXXL": 2,
+        "XXXXL": 1
+      },
       "price": 320000,
       "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lit5zqky0mhebb",
       "createdAt": 1616346753759,
@@ -633,8 +791,14 @@
       "gendersID": 3,
       "newSaleID": true,
       "hotSaleID": false,
-      "size": "M,L,XL",
-      "color": "grey,navy",
+      "stock": {
+        "M": 10,
+        "L": 8,
+        "XL": 6,
+        "XXL": 4,
+        "XXXL": 2,
+        "XXXXL": 1
+      },
       "price": 380000,
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzpXM8MZo-tha0Eoy598wyUZgcOHfM_lo7aA&s",
       "createdAt": 1616346753759,
@@ -642,148 +806,199 @@
     },
     {
       "id": 19,
-      "productId": "19",
       "name": "Quần jogger ống rộng",
-      "createdAt": 1616346753759,
-      "updatedAt": 1616346753759,
       "categoriesID": 10,
       "gendersID": 3,
       "newSaleID": true,
       "hotSaleID": true,
-      "size": "L,XL,XXL",
-      "color": "black,grey",
+      "stock": {
+        "M": 10,
+        "L": 8,
+        "XL": 6,
+        "XXL": 4,
+        "XXXL": 2,
+        "XXXXL": 1
+      },
       "price": 290000,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrlvp21PWu6AVlO83c9bEblB1el9OfZ5VF-w&s"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrlvp21PWu6AVlO83c9bEblB1el9OfZ5VF-w&s",
+      "createdAt": 1616346753759,
+      "updatedAt": 1616346753759
     },
     {
       "id": 20,
-      "productId": "20",
       "name": "Áo phông form rộng ATHANOR",
-      "createdAt": 1616346753759,
-      "updatedAt": 1616346753759,
       "categoriesID": 9,
       "gendersID": 3,
       "newSaleID": true,
       "hotSaleID": true,
-      "size": "M,L,XL,XXL",
-      "color": "white,black,red",
+      "stock": {
+        "M": 10,
+        "L": 8,
+        "XL": 6,
+        "XXL": 4,
+        "XXXL": 2,
+        "XXXXL": 1
+      },
       "price": 180000,
-      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lvd0hwq7f0y55e"
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lvd0hwq7f0y55e",
+      "createdAt": 1616346753759,
+      "updatedAt": 1616346753759
     },
     {
       "id": 21,
-      "productId": "21",
       "name": "Áo Len Nam GhiLe SUKIYA",
-      "createdAt": 1616346753759,
-      "updatedAt": 1616346753759,
       "categoriesID": 12,
       "gendersID": 1,
       "newSaleID": true,
       "hotSaleID": true,
-      "size": "M,L,XL",
-      "color": "blue,grey",
+      "stock": {
+        "M": 10,
+        "L": 8,
+        "XL": 6,
+        "XXL": 4,
+        "XXXL": 2,
+        "XXXXL": 1
+      },
       "price": 400000,
-      "image": "https://down-vn.img.susercontent.com/file/85d6d58409e7f6c394580872a91eae42"
+      "image": "https://down-vn.img.susercontent.com/file/85d6d58409e7f6c394580872a91eae42",
+      "createdAt": 1616346753759,
+      "updatedAt": 1616346753759
     },
     {
       "id": 22,
-      "productId": "22",
       "name": "Quần Jean PEALO",
-      "createdAt": 1616346753759,
-      "updatedAt": 1616346753759,
       "categoriesID": 11,
       "gendersID": 3,
       "newSaleID": true,
       "hotSaleID": true,
-      "size": "L,XL,XXL",
-      "color": "blue,black",
+      "stock": {
+        "M": 10,
+        "L": 8,
+        "XL": 6,
+        "XXL": 4,
+        "XXXL": 2,
+        "XXXXL": 1
+      },
       "price": 550000,
-      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lvj21gfhn43x70"
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lvj21gfhn43x70",
+      "createdAt": 1616346753759,
+      "updatedAt": 1616346753759
     },
     {
       "id": 23,
-      "productId": "23",
-      "name": "sơ mi nữ 3",
-      "createdAt": 1616346753759,
-      "updatedAt": 1616346753759,
+      "name": "Sơ mi nữ 3",
       "categoriesID": 2,
       "gendersID": 2,
       "newSaleID": true,
       "hotSaleID": true,
-      "size": "L,XL,XXL",
-      "color": "white,blue",
+      "stock": {
+        "M": 10,
+        "L": 8,
+        "XL": 6,
+        "XXL": 4,
+        "XXXL": 2,
+        "XXXXL": 1
+      },
       "price": 700000,
-      "image": "https://product.hstatic.net/200000642151/product/w-th22s-009_4__267db5e0f62e48b4b50a50851f7144b7_69e24f6d99ba4e03beb6e301ad91ba7f_master.jpg"
+      "image": "https://product.hstatic.net/200000642151/product/w-th22s-009_4__267db5e0f62e48b4b50a50851f7144b7_69e24f6d99ba4e03beb6e301ad91ba7f_master.jpg",
+      "createdAt": 1616346753759,
+      "updatedAt": 1616346753759
     },
     {
       "id": 24,
-      "productId": "24",
       "name": "Áo hoodie nam basic",
-      "createdAt": 1616346753759,
-      "updatedAt": 1616346753759,
       "categoriesID": 7,
       "gendersID": 1,
       "newSaleID": true,
       "hotSaleID": true,
-      "size": "M,L,XL",
-      "color": "black,grey",
+      "stock": {
+        "M": 10,
+        "L": 8,
+        "XL": 6,
+        "XXL": 4,
+        "XXXL": 2,
+        "XXXXL": 1
+      },
       "price": 350000,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8dDaFgKP7jhsLxbzIhTpecZC2h4HsGXngcA&s"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8dDaFgKP7jhsLxbzIhTpecZC2h4HsGXngcA&s",
+      "createdAt": 1616346753759,
+      "updatedAt": 1616346753759
     },
     {
       "id": 25,
-      "productId": "25",
       "name": "Quần shorts vải",
-      "createdAt": 1616346753759,
-      "updatedAt": 1616346753759,
       "categoriesID": 10,
       "gendersID": 3,
       "newSaleID": true,
       "hotSaleID": true,
-      "size": "L,XL,XXL",
-      "color": "black,green",
+      "stock": {
+        "M": 10,
+        "L": 8,
+        "XL": 6,
+        "XXL": 4,
+        "XXXL": 2,
+        "XXXXL": 1
+      },
       "price": 220000,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZgMBPehG8RyobsYhmBmoD7GOdQouhaCrkiA&s"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZgMBPehG8RyobsYhmBmoD7GOdQouhaCrkiA&s",
+      "createdAt": 1616346753759,
+      "updatedAt": 1616346753759
     },
     {
       "id": 26,
-      "productId": "26",
       "name": "Áo sơ mi sọc kẻ",
-      "createdAt": 1616346753759,
-      "updatedAt": 1616346753759,
       "categoriesID": 2,
       "gendersID": 1,
       "newSaleID": true,
       "hotSaleID": true,
-      "size": "M,L,XL",
-      "color": "white,blue",
+      "stock": {
+        "M": 10,
+        "L": 8,
+        "XL": 6,
+        "XXL": 4,
+        "XXXL": 2,
+        "XXXXL": 1
+      },
       "price": 250000,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4OeaQ163S76VWenXqX30fs-BY-SsY4jd99w&s"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4OeaQ163S76VWenXqX30fs-BY-SsY4jd99w&s",
+      "createdAt": 1616346753759,
+      "updatedAt": 1616346753759
     },
     {
       "id": 27,
-      "productId": "27",
       "name": "Quần jogger nỉ",
-      "createdAt": 1616346753759,
-      "updatedAt": 1616346753759,
       "categoriesID": 10,
       "gendersID": 3,
       "newSaleID": true,
       "hotSaleID": true,
-      "size": "M,L,XL",
-      "color": "black,grey",
+      "stock": {
+        "M": 10,
+        "L": 8,
+        "XL": 6,
+        "XXL": 4,
+        "XXXL": 2,
+        "XXXXL": 1
+      },
       "price": 300000,
-      "image": "https://cdn.boo.vn/media/catalog/product/1/_/1.2.24.3.18.001.123.23-10100035-n-2.jpg"
+      "image": "https://cdn.boo.vn/media/catalog/product/1/_/1.2.24.3.18.001.123.23-10100035-n-2.jpg",
+      "createdAt": 1616346753759,
+      "updatedAt": 1616346753759
     },
     {
       "id": 28,
-      "name": "áo polo nam",
+      "name": "Áo polo nam",
       "categoriesID": 5,
       "gendersID": 1,
       "newSaleID": true,
       "hotSaleID": true,
-      "size": "L,XL,XXL",
-      "color": "black,white",
+      "stock": {
+        "M": 10,
+        "L": 8,
+        "XL": 6,
+        "XXL": 4,
+        "XXXL": 2,
+        "XXXXL": 1
+      },
       "price": 800000,
       "image": "https://owen.cdn.vccloud.vn/media/catalog/product/cache/d52d7e242fac6dae82288d9a793c0676/a/p/apt231206._34_1.jpg",
       "createdAt": 1616346753759,
@@ -791,231 +1006,203 @@
     },
     {
       "id": 29,
-      "productId": "29",
       "name": "Áo khoác gió",
-      "createdAt": 1616346753759,
-      "updatedAt": 1616346753759,
       "categoriesID": 12,
       "gendersID": 3,
       "newSaleID": true,
       "hotSaleID": true,
-      "size": "M,L,XL",
-      "color": "red,blue",
+      "stock": {
+        "M": 10,
+        "L": 8,
+        "XL": 6,
+        "XXL": 4,
+        "XXXL": 2,
+        "XXXXL": 1
+      },
       "price": 420000,
-      "image": "https://product.hstatic.net/1000312752/product/afdt185-8-a_10c97d53e77f4b87b7c6ac26a465eccb.jpg"
+      "image": "https://product.hstatic.net/1000312752/product/afdt185-8-a_10c97d53e77f4b87b7c6ac26a465eccb.jpg",
+      "createdAt": 1616346753759,
+      "updatedAt": 1616346753759
     },
     {
       "id": 30,
-      "productId": "30",
       "name": "Áo polo nam",
-      "createdAt": 1616346753759,
-      "updatedAt": 1616346753759,
       "categoriesID": 5,
       "gendersID": 1,
       "newSaleID": true,
       "hotSaleID": true,
-      "size": "M,L,XL,XXL",
-      "color": "black,white,grey",
+      "stock": {
+        "M": 10,
+        "L": 8,
+        "XL": 6,
+        "XXL": 4,
+        "XXXL": 2,
+        "XXXXL": 1
+      },
       "price": 200000,
-      "image": "https://deltasport.vn/wp-content/uploads/2024/02/PO102M1-ao-polo-nam-xanh-ly-459K-8.png"
+      "image": "https://deltasport.vn/wp-content/uploads/2024/02/PO102M1-ao-polo-nam-xanh-ly-459K-8.png",
+      "createdAt": 1616346753759,
+      "updatedAt": 1616346753759
     },
     {
       "id": 31,
-      "productId": "31",
       "name": "Quần kaki dài",
-      "createdAt": 1616346753759,
-      "updatedAt": 1616346753759,
       "categoriesID": 11,
       "gendersID": 3,
       "newSaleID": true,
       "hotSaleID": true,
-      "size": "L,XL,XXL",
-      "color": "khaki,black",
+      "stock": {
+        "M": 10,
+        "L": 8,
+        "XL": 6,
+        "XXL": 4,
+        "XXXL": 2,
+        "XXXXL": 1
+      },
       "price": 350000,
-      "image": "https://down-vn.img.susercontent.com/file/e9f9c28895a9cfe099fdc32cd991d9a1"
+      "image": "https://down-vn.img.susercontent.com/file/e9f9c28895a9cfe099fdc32cd991d9a1",
+      "createdAt": 1616346753759,
+      "updatedAt": 1616346753759
     },
     {
       "id": 32,
-      "productId": "32",
       "name": "Áo khoác dù nam",
-      "createdAt": 1616346753759,
-      "updatedAt": 1616346753759,
       "categoriesID": 12,
       "gendersID": 1,
       "newSaleID": true,
       "hotSaleID": true,
-      "size": "M,L,XL",
-      "color": "black,green",
+      "stock": {
+        "M": 10,
+        "L": 8,
+        "XL": 6,
+        "XXL": 4,
+        "XXXL": 2,
+        "XXXXL": 1
+      },
       "price": 450000,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWpwOzKfo7r57TjSIK-KrNcZLhG_4Sku9tLA&s"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWpwOzKfo7r57TjSIK-KrNcZLhG_4Sku9tLA&s",
+      "createdAt": 1616346753759,
+      "updatedAt": 1616346753759
     },
     {
       "id": 33,
-      "productId": "33",
       "name": "Áo khoác dù nam",
-      "createdAt": 1616346753759,
-      "updatedAt": 1616346753759,
       "categoriesID": 7,
       "gendersID": 1,
       "newSaleID": true,
       "hotSaleID": true,
-      "size": "M,L,XL",
-      "color": "black,green",
+      "stock": {
+        "M": 10,
+        "L": 8,
+        "XL": 6,
+        "XXL": 4,
+        "XXXL": 2,
+        "XXXXL": 1
+      },
       "price": 450000,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWpwOzKfo7r57TjSIK-KrNcZLhG_4Sku9tLA&s"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWpwOzKfo7r57TjSIK-KrNcZLhG_4Sku9tLA&s",
+      "createdAt": 1616346753759,
+      "updatedAt": 1616346753759
     },
     {
       "id": 34,
-      "productId": "34",
-      "name": " Quần Tây nam",
-      "createdAt": 1616346753759,
-      "updatedAt": 1616346753759,
+      "name": "Quần Tây nam",
       "categoriesID": 2,
       "gendersID": 1,
       "newSaleID": true,
       "hotSaleID": true,
-      "size": "M,L,XL",
-      "color": "white,blue",
+      "stock": {
+        "M": 10,
+        "L": 8,
+        "XL": 6,
+        "XXL": 4,
+        "XXXL": 2,
+        "XXXXL": 1
+      },
       "price": 250000,
-      "image": "https://product.hstatic.net/1000402464/product/dp23ss04c-ep_black___11__e70fff726a264c41bb40f27a3ec649f1_master.jpg"
+      "image": "https://product.hstatic.net/1000402464/product/dp23ss04c-ep_black___11__e70fff726a264c41bb40f27a3ec649f1_master.jpg",
+      "createdAt": 1616346753759,
+      "updatedAt": 1616346753759
     },
     {
       "id": 35,
-      "name": "Quần Tây nam 2",
+      "name": "Quần Tây nam 2",
       "categoriesID": 4,
       "gendersID": 3,
       "newSaleID": true,
       "hotSaleID": true,
-      "size": "M,L,XL",
-      "color": "white,blue",
+      "stock": {
+        "M": 10,
+        "L": 8,
+        "XL": 6,
+        "XXL": 4,
+        "XXXL": 2,
+        "XXXXL": 1
+      },
       "price": 250000,
-      "image": "https://thoitrangmanza.com/wp-content/uploads/2021/05/Quan-tay-nam-trung-nien-manza-ma-822-v2.jpg"
+      "image": "https://thoitrangmanza.com/wp-content/uploads/2021/05/Quan-tay-nam-trung-nien-manza-ma-822-v2.jpg",
+      "createdAt": 1616346753759,
+      "updatedAt": 1616346753759
     },
     {
       "id": 36,
-      "name": "quần âu cạp cao nam",
+      "name": "Quần âu cạp cao nam",
       "categoriesID": 4,
       "gendersID": 3,
       "newSaleID": true,
       "hotSaleID": true,
-      "size": "M,L,XL",
-      "color": "white,blue",
+      "stock": {
+        "M": 10,
+        "L": 8,
+        "XL": 6,
+        "XXL": 4,
+        "XXXL": 2,
+        "XXXXL": 1
+      },
       "price": 250000,
-      "image": "https://cf.shopee.vn/file/6ad0fc1116d692f18172a2ada0b95167"
+      "image": "https://cf.shopee.vn/file/6ad0fc1116d692f18172a2ada0b95167",
+      "createdAt": 1616346753759,
+      "updatedAt": 1616346753759
     },
     {
-      "id": 40,
-      "name": "quần âu nam",
+      "id": 37,
+      "name": "Quần âu nam",
       "categoriesID": 11,
       "gendersID": 1,
       "newSaleID": true,
       "hotSaleID": true,
-      "size": "M,L,XL",
-      "color": "white,blue",
+      "stock": {
+        "M": 10,
+        "L": 8,
+        "XL": 6,
+        "XXL": 4,
+        "XXXL": 2,
+        "XXXXL": 1
+      },
       "price": 250000,
       "image": "https://product.hstatic.net/1000388805/product/quan-tay-nam-mau-xanh-ke-o2_4184a8dc28b84e23a41ff1daf1844e5b.jpg",
       "createdAt": 1616346753759,
       "updatedAt": 1616346753759
     },
     {
-      "id": 43,
+      "id": 38,
       "name": "Áo sơ mi sọc kẻ",
       "categoriesID": 2,
-      "createdAt": 1616346753759,
-      "updatedAt": 1616346753759,
       "gendersID": 1,
       "newSaleID": true,
       "hotSaleID": true,
-      "size": "M,L,XL",
-      "color": "white,blue",
+      "stock": {
+        "M": 10,
+        "L": 8,
+        "XL": 6,
+        "XXL": 4,
+        "XXXL": 2,
+        "XXXXL": 1
+      },
       "price": 250000,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4OeaQ163S76VWenXqX30fs-BY-SsY4jd99w&s"
-    },
-    {
-      "id": 44,
-      "name": "Quần Kaki Nam ống rộng",
-      "createdAt": 1616346753759,
-      "updatedAt": 1616346753759,
-      "categoriesID": 11,
-      "gendersID": 3,
-      "newSaleID": true,
-      "hotSaleID": true,
-      "size": "XL,XXL,XXXL",
-      "color": "BE",
-      "price": "350000",
-      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lxni709dobmj7c.webp"
-    },
-    {
-      "id": 45,
-      "name": "Verse T-Shirt",
-      "categoriesID": 9,
-      "gendersID": 3,
-      "newSaleID": true,
-      "hotSaleID": true,
-      "size": "XL,XXL,XXXL",
-      "color": "Trắng,Đen",
-      "price": "220000",
-      "image": "https://product.hstatic.net/200000305259/product/tee_verse_w1_2d7f9373e25449f59b6840135eb87e48_master.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4OeaQ163S76VWenXqX30fs-BY-SsY4jd99w&s",
       "createdAt": 1616346753759,
       "updatedAt": 1616346753759
-    },
-    {
-      "id": 46,
-      "productId": 46,
-      "name": "Áo Croptop Ngắn Tay",
-      "createdAt": 1733071388598,
-      "updatedAt": 1733071388598,
-      "categoriesID": 6,
-      "gendersID": 2,
-      "newSaleID": true,
-      "hotSaleID": true,
-      "size": "M,L,XL",
-      "color": "Trắng,Đen",
-      "price": "230000",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGNz3vICmPYQgsyre60cWWsdgy4jJziIYUIA&s"
-    },
-    {
-      "id": 47,
-      "productId": 47,
-      "name": "ÁO CROP-TOP SCM22.3",
-      "createdAt": 1733071452463,
-      "updatedAt": 1733071452463,
-      "categoriesID": 6,
-      "gendersID": 2,
-      "newSaleID": false,
-      "hotSaleID": true,
-      "size": "M,L,XL",
-      "color": "Trắng,Đen",
-      "price": "230000",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ9RcZPzp24AgWeXBdZ9f7q0dMvQ61lRqF5A&s"
-    },
-    {
-      "id": 48,
-      "name": "Áo Vest Nữ Công Sở Màu Xanh Đen",
-      "categoriesID": 4,
-      "gendersID": 2,
-      "newSaleID": false,
-      "hotSaleID": false,
-      "size": "M,L,XL,XXL",
-      "color": " Đen",
-      "price": "500000",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfOH2_mJ6zYK4VeMyQqUD5sV8cIedOZD4u7Q&s",
-      "createdAt": 1733077623164,
-      "updatedAt": 1733077623164
-    },
-    {
-      "id": 49,
-      "name": "Áo Nỉ Nữ màu Hồng",
-      "categoriesID": 8,
-      "gendersID": 2,
-      "newSaleID": false,
-      "hotSaleID": false,
-      "size": "XL,XXL,XXXL",
-      "color": "Hồng",
-      "price": "340000",
-      "image": "https://down-vn.img.susercontent.com/file/f1d3880e5f43a4b08a5e676b0ee9133f",
-      "createdAt": 1733104875246,
-      "updatedAt": 1733104875246
     }
   ],
   "profile": {
