@@ -339,8 +339,8 @@
   ],
   "User": [
     {
-      "id": 8,
-      "UserID": 7,
+      "id": 9,
+      "UserID": 123,
       "name": "HND",
       "username": "VHUNG48",
       "email": "gologolo4567@gmail.com",
@@ -458,7 +458,7 @@
     {
       "id": 9,
       "categoriesID": 9,
-      "name": "T-shirt",
+      "name": "ÁO",
       "gendersID": 3,
       "createdAt": 1616346753759,
       "updatedAt": 1616346753759
@@ -503,10 +503,10 @@
         "XL": 3,
         "XXL": 0
       },
-      "price": 350000,
+      "price": 250000,
       "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-ltb0sps5bqo488.webp",
       "createdAt": 1616346753759,
-      "updatedAt": 1616346753759
+      "updatedAt": 1742708308453
     },
     {
       "id": 3,
@@ -593,24 +593,6 @@
       },
       "price": 350000,
       "image": "https://im.uniqlo.com/global-cms/spa/res9d8dca2c43e731b6a979bdd506bbcb93fr.jpg",
-      "createdAt": 1616346753759,
-      "updatedAt": 1616346753759
-    },
-    {
-      "id": 8,
-      "name": "Áo khoác gió telab",
-      "categoriesID": 12,
-      "gendersID": 3,
-      "newSaleID": false,
-      "hotSaleID": true,
-      "stock": {
-        "M": 8,
-        "L": 6,
-        "XL": 4,
-        "XXL": 2
-      },
-      "price": 450000,
-      "image": "https://bizweb.dktcdn.net/thumb/grande/100/415/697/products/ak046.png?v=1701405178907",
       "createdAt": 1616346753759,
       "updatedAt": 1616346753759
     },
